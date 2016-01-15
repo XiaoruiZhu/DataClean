@@ -4,6 +4,17 @@
 
 library(XML)
 ### read in the field.html file into R
+
+#' "htmltodata" function is used to transfer information from html files to R or exls files
+#'
+#' @title htmltodata
+#'
+#' @param path
+#'
+#' @return
+#' @export
+#'
+#' @examples
 shoetower <- function(path){
   ### filetest <- "submitter8087/submission1941/fields.html" ### Doesn't need it
   ###    filetest
