@@ -13,5 +13,5 @@ The structrue of this package is as follows:
 
     * "MergerXLSX" is designed for excel file merging. It will allow one to merge two xlsx files by a same variable. **Be careful with the reliable of this function. According to the results of my projects, this function maybe not as reliable as I image. So I will try to revise this function so that it will work better**
     * "variableclean" is a function to clean specified variables under certain conditions. Three ordinary situations are the purpose of this function. First, return numerical value ahead or behind specified words. Second, return numerical value that display primarily. Third, return value in number not in words.
-    * "textmining" 
+    * "textmining" is 
     * 
