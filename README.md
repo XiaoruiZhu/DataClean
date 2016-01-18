@@ -15,3 +15,4 @@ The structrue of this package is as follows:
     * "variableclean" is a function to clean specified variables under certain conditions. Three ordinary situations are the purpose of this function. First, return numerical value ahead or behind specified words. Second, return numerical value that display primarily. Third, return value in number not in words.
     * "textmining" is 
     * 
+
