@@ -2,16 +2,17 @@
 
 ###################################################################
 
-library(XML)
 ### read in the field.html file into R
 
 #' "htmltodata" function is used to transfer information from html files to R or exls files
 #'
 #' @title htmltodata
 #'
-#' @param path
+#' @param path is the path of the file that you want to import into R and then export.
 #'
+#' @import XML
 #' @return
+#' @author Xiaorui(Jeremy) Zhu
 #' @export
 #'
 #' @examples
@@ -53,7 +54,7 @@ shoetower <- function(path){
 ## trytree
 
 
-QandA <- shoetower(mylist[2])
+## QandA <- shoetower(mylist[2])
 ## No need to
 ## QandA$Answers[9]
 ## iconv(QandA$Answers[9],"UTF-8","")
