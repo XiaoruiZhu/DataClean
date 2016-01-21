@@ -36,14 +36,36 @@ length(all.files)
 # Testing htmltodata function
 #
 library(XML)
-path <- "'Selling stampede' not over - Yahoo Finance.html"
+# In mac
+setwd('/Users/JeremyZhu/Documents/R Packages/DataClean/Data/')  # 先把工作目录切换到pkg之上
+
+path <- "R SVM.html"
+
 cha.path <- as.character(path)
 ### Use XML package to transfer html file into text
+cha.path
 root <- htmlParse(cha.path)
 root
+
+doc = xmlRoot(htmlTreeParse("R SVM.html"))
+
+function(node)
+  xmlSApply(node, xmlValue)
+
+xmlSApply(doc[[1]], xmlValue)
+tmp = xmlSApply(doc, function(x) xmlSApply(x, xmlValue))
+tmp
+tmp = t(tmp)
+text1 <-  as.data.frame(matrix(as.numeric(tmp[,-1]), 2))
+
+names(grades) = names(doc[[1]])[-1]
+
+grades$Student = tmp[,1]
 
 ### use getNodeSet to find right position of answers.
 getIDs <- getNodeSet(root, '//head//title')
 ### here for the ID
 ID <- sapply(getIDs, xmlValue)
 ID
+ans <- getNodeSet(root, '//body//div')
+ans
