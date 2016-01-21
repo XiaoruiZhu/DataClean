@@ -47,6 +47,7 @@ cha.path
 root <- htmlParse(cha.path)
 root
 
+# This part is used to test
 doc = xmlRoot(htmlTreeParse("R SVM.html"))
 
 function(node)
@@ -61,6 +62,7 @@ text1 <-  as.data.frame(matrix(as.numeric(tmp[,-1]), 2))
 names(grades) = names(doc[[1]])[-1]
 
 grades$Student = tmp[,1]
+#
 
 ### use getNodeSet to find right position of answers.
 getIDs <- getNodeSet(root, '//head//title')
