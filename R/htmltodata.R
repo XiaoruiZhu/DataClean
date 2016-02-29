@@ -16,7 +16,7 @@
 #' @export
 #'
 #' @examples
-shoetower <- function(path){
+htmltodata <- function(path){
   ### filetest <- "submitter8087/submission1941/fields.html" ### Doesn't need it
   ###    filetest
   ## try to change the path into characters
@@ -25,13 +25,11 @@ shoetower <- function(path){
   root <- htmlParse(cha.path)
 
   ### use getNodeSet to find right position of answers.
-  getIDs <- getNodeSet(root, '//head//title')
+  getTitle <- getNodeSet(root, '//head//title')
 
-  ### here for the ID
-  ID <- sapply(getIDs, xmlValue)
-  ### regexpr("coursera_user_id:", ID)
+  ### here for the file title
+  title <- sapply(getTitle, xmlValue)
 
-  ### Extract answers
   ## ans <- getNodeSet(root, '//body//div[@class="field-value"]')
   ans <- getNodeSet(root, '//body//div')
 
