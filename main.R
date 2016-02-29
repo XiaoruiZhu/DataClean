@@ -39,13 +39,17 @@ library(XML)
 # In mac
 setwd('/Users/JeremyZhu/Documents/R Packages/DataClean/Data/')  # 先把工作目录切换到pkg之上
 
-path <- "R SVM.html"
+path <- "fields.html"
 
 cha.path <- as.character(path)
+
 ### Use XML package to transfer html file into text
-cha.path
+
 root <- htmlParse(cha.path)
 root
+
+test <- htmltodata(cha.path)
+test
 
 # This part is used to test
 doc = xmlRoot(htmlTreeParse("R SVM.html"))
