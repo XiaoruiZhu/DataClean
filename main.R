@@ -47,9 +47,11 @@ cha.path <- as.character(path)
 
 root <- htmlParse(cha.path)
 root
-
+getIDs <- getNodeSet(root, '//head//title')
+getIDs
+testID <- sapply(getIDs, xmlValue)
+testID
 test <- htmltodata(cha.path)
-test
 
 # This part is used to test
 doc = xmlRoot(htmlTreeParse("R SVM.html"))

@@ -30,31 +30,16 @@ htmltodata <- function(path){
   ### here for the file title
   title <- sapply(getTitle, xmlValue)
 
-  ## ans <- getNodeSet(root, '//body//div[@class="field-value"]')
-  ans <- getNodeSet(root, '//body//div')
+  values <- getNodeSet(root, '//body//div')
 
-  answers <- sapply(ans, xmlValue) ### Just get those text answers, image lost
+  text_values <- sapply(values, xmlValue) ### Just get those text answers, image lost
   ### image saving!!!!!!
-  answers2 <- getNodeSet(root, '//body//div[@class="field-value"]//img[@src]')
-  answerimage <- sapply(answers2, function(els) xmlGetAttr(els, "src"))
-  if (length(answerimage)>=1) {
-    image <- answerimage[1] }
+  image_path <- getNodeSet(root, '//body//div[@class="field-value"]//img[@src]')
+  image_saved_path <- sapply(image_path, function(els) xmlGetAttr(els, "src"))
+  if (length(image_saved_path)>=1) {
+    image <- paste(image_saved_path, sep = '') }
   else {
     image <- "No Image data"}
-  list(IDS = ID, Answers = answers, Image = image)
+  list(title = title, text_values = text_values, Image_path = image)
 }
 
-## Test staff
-## aaa <- as.character(mylist[2])
-## try02 <- htmlParse(aaa)
-## try02
-## trytree <- htmlTreeParse(aaa)
-## trytree
-
-
-## QandA <- shoetower(mylist[2])
-## No need to
-## QandA$Answers[9]
-## iconv(QandA$Answers[9],"UTF-8","")
-
-## Now, what I need to do is to rearrage the structure of these four questions
