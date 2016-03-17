@@ -1,3 +1,5 @@
+# This could be created into a function. What is the main function of it is undecided.
+
 # need to be change
 shoetowerout <- function(rawlist){
   Q1.position <- grep("Please provide",rawlist$Answers)

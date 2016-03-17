@@ -3,11 +3,6 @@ setwd('Y:/PH.D/Fields/R_packages/DataClean/')  # 先把工作目录切换到pkg�
 Sys.setenv(JAVA_HOME='C:\\Program Files (x86)\\Java\\jre1.8.0_66') # for 64-bit version
 # library(rJava)
 library(xlsx)
-library(rJava)
-
-# Following is used to generate package by "roxygen2"
-library(roxygen2)
-roxygenize('DataClean')
 
 ###########################################################
 # Testing sections
