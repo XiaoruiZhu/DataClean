@@ -1,6 +1,4 @@
 setwd('Y:/PH.D/Fields/R_packages/DataClean/')  # 先把工作目录切换到pkg之上
-
-Sys.setenv(JAVA_HOME='C:\\Program Files (x86)\\Java\\jre1.8.0_66') # for 64-bit version
 # library(rJava)
 library(xlsx)
 
