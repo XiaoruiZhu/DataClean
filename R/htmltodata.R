@@ -1,9 +1,3 @@
-# Writing a function to get information from "html" files.
-
-###################################################################
-
-### read in the field.html file into R
-
 #' "htmltodata" function is used to transfer information from html files to R or exls files
 #'
 #' @title htmltodata
