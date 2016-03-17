@@ -29,7 +29,9 @@ write.xlsx2(x = outfile, file = "MergerTest.xlsx", sheetName = "submitter", row.
 all.files <- getSfilesPath(root.path ="Z:/zhuxiaorui/Dropbox/assessment9/", filename = "fields.html")
 all.files[1:10]
 length(all.files)
-# !!!!!!!!!!!!!!!!!!!! Here is an important issue. This function should be revised so that it could be use to collect all files' name under a certain folder. Right now, it can collect files under subfolders. Try to use recursion!!!!!!!!
+# !!!!!!!!!!!!!!!!!!!! Here is an important issue. This function should be revised
+# so that it could be use to collect all files' name under a certain folder.
+# Right now, it can collect files under subfolders. Try to use recursion!!!!!!!!
 # Solved! ##
 # End test
 
