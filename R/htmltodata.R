@@ -11,13 +11,10 @@
 #'
 #' @examples
 htmltodata <- function(path){
-  ### filetest <- "submitter8087/submission1941/fields.html" ### Doesn't need it
-  ###    filetest
   ## try to change the path into characters
   cha.path <- as.character(path)
   ### Use XML package to transfer html file into text
   root <- htmlParse(cha.path)
-
   ### use getNodeSet to find right position of answers.
   getTitle <- getNodeSet(root, '//head//title')
 
