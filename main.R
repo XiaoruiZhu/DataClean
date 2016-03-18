@@ -47,6 +47,7 @@ test <- htmltodata(cha.path)
 test
 
 # This part is used to test
+# This is an example
 doc = xmlRoot(htmlTreeParse("R SVM.html"))
 
 function(node)
