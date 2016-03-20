@@ -7,7 +7,7 @@
 ##' @param original_file is the name of original file. This file contains all original data. This file should be "xlsx" file and save in the same folder.
 ##' @param addin_file is the file that need to be merged. This file should be "xlsx" file and save in the same folder.
 ##' @param mergeID is the merger variable name in both files.
-##'
+##' @references Github https://github.com/XiaoruiZhu
 ##' @importFrom xlsx read.xlsx2
 ##' @return Return data are all original data with addin variables.
 ##' @author Xiaorui.Zhu

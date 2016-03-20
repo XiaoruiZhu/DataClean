@@ -1,7 +1,7 @@
 setwd('Y:/PH.D/Fields/R_packages/DataClean/')  # 先把工作目录切换到pkg之上
 # library(rJava)
 library(xlsx)
-
+library(rJava)
 ###########################################################
 # Testing sections
 # Testing MergerXLSX function

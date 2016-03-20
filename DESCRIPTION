@@ -1,9 +1,6 @@
 Package: DataClean
 Type: Package
-Title: "DataClean" package includes functions that you may use when you're
-    cleaning raw data, transfering html, xlsx, txt data file to other format. And it
-    includes functions to manupulate text variables, extract numeric variables from
-    text variables
+Title: "DataClean" package for data cleaning.
 Version: 1.0
 Date: 2015-12-17
 Author: Xiaorui(Jeremy) Zhu
@@ -11,9 +8,11 @@ Maintainer: Xiaorui(Jeremy) Zhu <zhuxiaorui1989@gmail.com>
 Depends:
     R (>= 3.1.0)
 Imports:
-    xlsx
-Description: This is a package that can be used to clean data files. Not even
-    for raw data file in html, xlsx, txt, but also for data merger, text variable
-    cleaning, extracting numeric variables from text variables.
+    xlsx, XML
+Description: This package includes functions that you may use when you're cleaning raw data,
+    transfering html, xlsx, txt data file to other format. And it includes functions to
+    manupulate text variables, extract numeric variables from text variables. It can be
+    used to clean data files, not even for raw data file in html, xlsx, txt, but also for
+    data merger, text variable cleaning, extracting numeric variables from text variables.
 License: GPL-2
 RoxygenNote: 5.0.1
