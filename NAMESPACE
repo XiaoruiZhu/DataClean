@@ -2,7 +2,6 @@
 
 export(MergerXLSX)
 export(getSfilesPath)
-export(hello)
 export(htmltodata)
 importFrom(XML,getNodeSet)
 importFrom(XML,htmlTreeParse)

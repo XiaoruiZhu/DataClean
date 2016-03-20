@@ -17,10 +17,4 @@ The whole paths of all files that meet the criteria were saved as a list.
 \description{
 If you want to collect all files under certain folder, this function should be the perfect one. This "getSfilesPath" function will collect all files with certain name. Then this function will return a list will all paths of those files so that further import or read is feasible.
 }
-<<<<<<< HEAD
-=======
-\examples{
-This need to be changed.
-}
->>>>>>> 6c7343773baf732bf67bac55623de1780cd6679f
 

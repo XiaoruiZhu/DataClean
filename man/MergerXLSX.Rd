@@ -2,16 +2,16 @@
 % Please edit documentation in R/MergerXLSX.R
 \name{MergerXLSX}
 \alias{MergerXLSX}
-\title{MergerXLSX is a function to merger of xlsx files by identified variable.}
+\title{A function to merger xlsx files by a identified variable.}
 \usage{
 MergerXLSX(original_file, addin_file, mergeID)
 }
 \arguments{
-\item{original_file}{is the name of original file. This file contains all original data. This file should be "xlsx" file and save in the same folder.}
+\item{original_file}{is the name of original file. This file contains all original data. It should be a "xlsx" file and saved in the same working folder. It must be a character string of file name if it is saved in working directory, or it should include saving path of file.}
 
-\item{addin_file}{is the file that need to be merged. This file should be "xlsx" file and save in the same folder.}
+\item{addin_file}{is the file that need to be merged. It should be "xlsx" file and saved in the same working folder.}
 
-\item{mergeID}{is the merger variable name in both files.}
+\item{mergeID}{is the merger variable name in both files. The variable name should be same in two files.}
 }
 \value{
 Return data are all original data with addin variables.
@@ -20,12 +20,12 @@ Return data are all original data with addin variables.
 This is a function that can be used to merger xlsx file using identified variables.
 }
 \details{
-This function need three parameters. First is the name of the file with which need to be merged. Second is the name of original file that contains data. Third is the identifiable variable name that in both files.
+This function need three parameters. First is the name of the file that need to be merged. Second is the name of original file that contains data. Third is the identifiable variable name that in both files.
 }
 \author{
-Xiaorui.Zhu
+Xiaorui (Jeremy) Zhu
 }
 \references{
-Github https://github.com/XiaoruiZhu
+Author's Github https://github.com/XiaoruiZhu. If you have trouble with rJava or xlsx, please check http://stackoverflow.com/questions/7019912/using-the-rjava-package-on-win7-64-bit-with-r for further information to fix it.
 }
 

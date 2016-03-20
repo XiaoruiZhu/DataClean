@@ -1,4 +1,4 @@
-#' "htmltodata" function is used to transfer information from html files to R or exls files
+#' "htmltodata" function is used to transfer information from html files to R or xlsx files
 #'
 #' @title htmltodata
 #'
