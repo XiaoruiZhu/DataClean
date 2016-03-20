@@ -9,19 +9,13 @@ Depends:
     R (>= 3.1.0)
 Imports:
     xlsx, XML
-<<<<<<< HEAD
-Description: This package includes functions that you may use when you're cleaning raw data,
-    transfering html, xlsx, txt data file to other format. And it includes functions to
-    manupulate text variables, extract numeric variables from text variables. It can be
-    used to clean data files, not even for raw data file in html, xlsx, txt, but also for
-    data merger, text variable cleaning, extracting numeric variables from text variables.
-=======
 Description: This package includes functions that you may use when you're
     cleaning raw data, transfering html, xlsx, txt data file to other format. And it
     includes functions to manupulate text variables, extract numeric variables from
     text variablesThis is a package that can be used to clean data files. Not even
     for raw data file in html, xlsx, txt, but also for data merger, text variable
-    cleaning, extracting numeric variables from text variables.
->>>>>>> 6c7343773baf732bf67bac55623de1780cd6679f
-License: GPL-2
+    cleaning, extracting numeric variables from text variables. It is originated from
+    a author's project which focuses on creative performance in online education
+    environment. The resulting paper of that study will be published soon.
+License: GPL-3
 RoxygenNote: 5.0.1

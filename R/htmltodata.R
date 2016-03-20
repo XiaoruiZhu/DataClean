@@ -8,11 +8,6 @@
 #' @return The return data are a list include all text results of submitters' answers.
 #' @author Xiaorui(Jeremy) Zhu
 #' @export
-<<<<<<< HEAD
-=======
-#'
-#' @examples This need to be changed.
->>>>>>> 6c7343773baf732bf67bac55623de1780cd6679f
 htmltodata <- function(path){
   ## try to change the path into characters
   cha.path <- as.character(path)
