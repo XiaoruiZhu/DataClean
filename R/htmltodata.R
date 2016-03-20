@@ -4,12 +4,12 @@
 #'
 #' @param path is the path of the file that you want to import into R and then export.
 #'
-#' @import XML
-#' @return
+#' @importFrom XML htmlTreeParse getNodeSet xmlGetAttr
+#' @return The return data are a list include all text results of submitters' answers.
 #' @author Xiaorui(Jeremy) Zhu
 #' @export
 #'
-#' @examples
+#' @examples This need to be changed.
 htmltodata <- function(path){
   ## try to change the path into characters
   cha.path <- as.character(path)
