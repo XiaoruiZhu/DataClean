@@ -7,6 +7,11 @@
 #'
 #' @return The whole paths of all files that meet the criteria were saved as a list.
 #' @export
+<<<<<<< HEAD
+=======
+#'
+#' @examples This need to be changed.
+>>>>>>> 6c7343773baf732bf67bac55623de1780cd6679f
 getSfilesPath <- function(root.path, filename){
   whole.path <- list.files(path = root.path, pattern = filename, full.names = TRUE, recursive = TRUE)
   return(whole.path)

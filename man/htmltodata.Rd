@@ -15,6 +15,12 @@ The return data are a list include all text results of submitters' answers.
 \description{
 "htmltodata" function is used to transfer information from html files to R or exls files
 }
+<<<<<<< HEAD
+=======
+\examples{
+This need to be changed.
+}
+>>>>>>> 6c7343773baf732bf67bac55623de1780cd6679f
 \author{
 Xiaorui(Jeremy) Zhu
 }
