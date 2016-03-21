@@ -2,7 +2,7 @@
 % Please edit documentation in R/getSfilesPath.R
 \name{getSfilesPath}
 \alias{getSfilesPath}
-\title{getSfilesPath function is used to collect paths of those specified files that you want to import or read.}
+\title{Collecting paths of some specified files that you want to import or read.}
 \usage{
 getSfilesPath(root.path, filename)
 }
@@ -15,6 +15,9 @@ getSfilesPath(root.path, filename)
 The whole paths of all files that meet the criteria were saved as a list.
 }
 \description{
-If you want to collect all files under certain folder, this function should be the perfect one. This "getSfilesPath" function will collect all files with certain name. Then this function will return a list will all paths of those files so that further import or read is feasible.
+If you want to collect all files under certain folder, this function should be the perfect one. It will collect all files with certain name. Then this function will return a list will all paths of those files so that further import or read is feasible.
+}
+\examples{
+getSfilesPath(root.path = R.home(), filename = "?.exe")
 }
 

@@ -4,7 +4,7 @@
 #'
 #' @param path is the path of the file that you want to import into R and then export.
 #'
-#' @importFrom XML htmlTreeParse getNodeSet xmlGetAttr
+#' @importFrom XML htmlTreeParse getNodeSet xmlGetAttr xmlValue
 #' @return The return data are a list include all text results of submitters' answers.
 #' @author Xiaorui(Jeremy) Zhu
 #' @export
@@ -12,7 +12,7 @@ htmltodata <- function(path){
   ## try to change the path into characters
   cha.path <- as.character(path)
   ### Use XML package to transfer html file into text
-  root <- htmlParse(cha.path)
+  root <- htmlTreeParse(cha.path)
   ### use getNodeSet to find right position of answers.
   getTitle <- getNodeSet(root, '//head//title')
 

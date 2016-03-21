@@ -2,16 +2,16 @@
 % Please edit documentation in R/MergerXLSX.R
 \name{MergerXLSX}
 \alias{MergerXLSX}
-\title{A function to merger xlsx files by a identified variable.}
+\title{A function to merger xlsx files by a same variable.}
 \usage{
 MergerXLSX(original_file, addin_file, mergeID)
 }
 \arguments{
-\item{original_file}{is the name of original file. This file contains all original data. It should be a "xlsx" file and saved in the same working folder. It must be a character string of file name if it is saved in working directory, or it should include saving path of file.}
+\item{original_file}{The name of original file. This file contains all original data. It should be a "xlsx" file and saved in the same working folder. This input must be a character string of file name if it is saved in working directory, or it should include saving path of file.}
 
-\item{addin_file}{is the file that need to be merged. It should be "xlsx" file and saved in the same working folder.}
+\item{addin_file}{The file that need to be merged. It should be "xlsx" file and saved in the same working folder.}
 
-\item{mergeID}{is the merger variable name in both files. The variable name should be same in two files.}
+\item{mergeID}{The merger variable name in both files. The variable name should be same in two files.}
 }
 \value{
 Return data are all original data with addin variables.
@@ -20,7 +20,7 @@ Return data are all original data with addin variables.
 This is a function that can be used to merger xlsx file using identified variables.
 }
 \details{
-This function need three parameters. First is the name of the file that need to be merged. Second is the name of original file that contains data. Third is the identifiable variable name that in both files.
+This function need three parameters. First is name of the original file that contains original data. Second is name of file that need to be merged. Third is the identifiable variable name that in both files.
 }
 \author{
 Xiaorui (Jeremy) Zhu

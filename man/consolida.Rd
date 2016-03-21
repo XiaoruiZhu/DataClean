@@ -2,16 +2,16 @@
 % Please edit documentation in R/consolida.R
 \name{consolida}
 \alias{consolida}
-\title{consolida funtion is an internal function for data merger.}
+\title{An internal function for data merging.}
 \usage{
 consolida(row, data, mergeVar)
 }
 \arguments{
-\item{row}{is each sample that is already divided from the original file.}
+\item{row}{One sample that is already divided from the original file.}
 
-\item{data}{is the "addin" file.}
+\item{data}{The "addin" file.}
 
-\item{mergeVar}{is the variable that use to merge.}
+\item{mergeVar}{The variable that use to merge.}
 }
 \value{
 is single line contains original variables and addin variables.

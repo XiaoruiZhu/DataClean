@@ -2,11 +2,11 @@
 ##'
 ##' This function is for internal use only, so no need to export it. It figures out the ID in the "addin" file then merge variables in addin file to the original file. This function is used for further "lapply" porcess.
 ##'
-##' @title consolida funtion is an internal function for data merger.
+##' @title An internal function for data merging.
 ##'
-##' @param row is each sample that is already divided from the original file.
-##' @param data is the "addin" file.
-##' @param mergeVar is the variable that use to merge.
+##' @param row One sample that is already divided from the original file.
+##' @param data The "addin" file.
+##' @param mergeVar The variable that use to merge.
 ##'
 ##' @return is single line contains original variables and addin variables.
 ##' @author Xiaorui.Zhu
