@@ -12,6 +12,10 @@
 ##' @return Return data are all original data with addin variables.
 ##' @author Xiaorui (Jeremy) Zhu
 ##' @export
+##' @examples
+##' # file1 <- "C:/data.xlsx"
+##' # file2 <- "C:/data2.xlsx"
+##' # merged <- MergerXLSX(file1, file2, mergeID)
 MergerXLSX <- function(original_file, addin_file, mergeID){
   if (missing(original_file) | missing(addin_file)) {
     stop("Two 'files' must be a character string of name if it is saved in working directory, or it should include saving path of file.")
