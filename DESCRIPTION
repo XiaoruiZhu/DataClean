@@ -1,13 +1,13 @@
 Package: DataClean
 Type: Package
 Title: Data Cleaning
-Version: 1.0
-Date: 2016-03-20
+Version: 1.0.1
+Date: 2016-03-31
 Author: Xiaorui(Jeremy) Zhu
 Maintainer: Xiaorui(Jeremy) Zhu <zhuxiaorui1989@gmail.com>
-Depends:
+Depends: 
     R (>= 3.1.0)
-Imports:
+Imports: 
     xlsx, XML
 Description: Includes functions that researchers or practitioners may use to clean
     raw data, transferring html, xlsx, txt data file into other formats. And it
@@ -17,3 +17,4 @@ Description: Includes functions that researchers or practitioners may use to cle
     environment. The resulting paper of that study will be published soon.
 License: GPL-3
 RoxygenNote: 5.0.1
+Suggests: testthat
