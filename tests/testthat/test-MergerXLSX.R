@@ -1,6 +1,6 @@
 library(DataClean)
 context("MergerXLSX")
 
-test_that("import files are not empty", {
-  expect_match(length(system.file("tests", package = "DataClean")), "test_import1.xlsx")
+test_that("Missing files", {
+  expect_error(MergerXLSX(original_file=NA, addin_file=NA, mergeID = "user_id"))
 })
