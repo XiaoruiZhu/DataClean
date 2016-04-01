@@ -9,14 +9,15 @@
 ##' @param mergeID The merger variable name in both files. The variable name should be same in two files.
 ##' @references Author's Github https://github.com/XiaoruiZhu. If you have trouble with rJava or xlsx, please check http://stackoverflow.com/questions/7019912/using-the-rjava-package-on-win7-64-bit-with-r for further information to fix it.
 ##' @importFrom xlsx read.xlsx2
+##' @importFrom tools file_ext
 ##' @return Return data are all original data with addin variables.
 ##' @author Xiaorui (Jeremy) Zhu
-##' @export tools file_ext
+##' @export
 ##' @examples
 ##' file1 <- system.file("tests", "test_import1.xlsx", package = "DataClean")
 ##' file2 <- system.file("tests", "test_import2.xlsx", package = "DataClean")
 ##' # merge two xlsx files by id
-##' Merged <- MergerXLSX(original_file=file1, addin_file=file2, mergeID = "user_id)
+##' Merged <- MergerXLSX(original_file=file1, addin_file=file2, mergeID = "user_id")
 ##' head(Merged)
 MergerXLSX <- function(original_file, addin_file, mergeID){
   if (missing(original_file) | missing(addin_file)) {
@@ -36,4 +37,4 @@ MergerXLSX <- function(original_file, addin_file, mergeID){
     combined <- do.call(rbind.data.frame, results)
     return(combined)
   }
-  }
+}

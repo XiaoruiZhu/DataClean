@@ -23,9 +23,11 @@ This is a function that can be used to merger xlsx file using identified variabl
 This function need three parameters. First is name of the original file that contains original data. Second is name of file that need to be merged. Third is the identifiable variable name that in both files.
 }
 \examples{
-# file1 <- "C:/data.xlsx"
-# file2 <- "C:/data2.xlsx"
-# merged <- MergerXLSX(file1, file2, mergeID)
+file1 <- system.file("tests", "test_import1.xlsx", package = "DataClean")
+file2 <- system.file("tests", "test_import2.xlsx", package = "DataClean")
+# merge two xlsx files by id
+Merged <- MergerXLSX(original_file=file1, addin_file=file2, mergeID = "user_id")
+head(Merged)
 }
 \author{
 Xiaorui (Jeremy) Zhu
